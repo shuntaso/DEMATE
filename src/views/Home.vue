@@ -69,6 +69,7 @@ export default {
 }
 button {
   cursor: pointer;
+  outline: 0;
 }
 .life {
   position: absolute;

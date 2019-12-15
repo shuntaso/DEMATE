@@ -29,7 +29,7 @@ export default {
 <style lang="scss">
 .content-life {
   width: 100%;
-  height: 2000px;
+  height: 3000px;
   padding: 200px 200px 200px 200px;
   animation-name: fadeIn;
   animation-duration: 3s;

@@ -28,9 +28,15 @@
           <router-link to="/fashion">Fashion</router-link> |
         </span>
         <span class="nav-world">
-          <router-link to="/world">World</router-link>
+          <router-link to="/world">World</router-link> |
         </span>
       </div>
+      <b-button class="signin">
+        <router-link to="/signin">ログイン</router-link>
+      </b-button>
+      <b-button class="signup">
+        <router-link to="/signup">新規登録</router-link>
+      </b-button>
     </div>
     <router-view />
   </div>
@@ -98,7 +104,10 @@ a {
   /* ナビゲーションバーのフォントサイズ */
   font-size: 28px;
 }
-
+.signin,
+.signup {
+  font-size: 20px;
+}
 .nav-life a.router-link-exact-active {
   color: rgb(245, 209, 9);
 }

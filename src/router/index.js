@@ -12,6 +12,8 @@ import Sports from "../views/Sports.vue";
 import Book from "../views/Book.vue";
 import Fashion from "../views/Fashion.vue";
 import World from "../views/World.vue";
+import Signin from "../views/Signin.vue";
+import Signup from "../views/Signup.vue";
 
 Vue.use(VueRouter);
 Vue.use(Buefy);
@@ -63,6 +65,16 @@ const routes = [
     path: "/world",
     name: "world",
     component: World
+  },
+  {
+    path: "/signin",
+    name: "signin",
+    component: Signin
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: Signup
   }
 ];
 
