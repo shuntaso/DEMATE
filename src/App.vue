@@ -104,9 +104,14 @@ a {
   /* ナビゲーションバーのフォントサイズ */
   font-size: 28px;
 }
+button {
+  border-radius: 16px;
+  padding-right: 10px;
+}
 .signin,
 .signup {
   font-size: 20px;
+  padding: 0 20px;
 }
 .nav-life a.router-link-exact-active {
   color: rgb(245, 209, 9);

@@ -10,9 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "core-js": "^3.3.2",
-=======
     "body-scroll-lock": "^2.6.4",
     "buefy": "^0.8.8",
     "core-js": "^3.5.0",
@@ -21,7 +18,6 @@
     "serialize-javascript": "^2.1.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
->>>>>>> a2940aee652a258c7e7985193d27354545169e0b
     "vue": "^2.6.10",
     "vue-loading-template": "^1.3.2",
     "vue-router": "^3.1.3",

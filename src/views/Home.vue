@@ -71,6 +71,9 @@ button {
   cursor: pointer;
   outline: 0;
 }
+button:active {
+  font-size: 116px;
+}
 .life {
   position: absolute;
   margin-left: 200px;
