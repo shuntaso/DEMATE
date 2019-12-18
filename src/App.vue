@@ -2,6 +2,8 @@
   <div id="app">
     <div id="demate-fixed">
       <router-link to="/" class="demate">Demate</router-link>
+      <b-button @click="signIn" class="signin" v-if="toggle">Sign in</b-button>
+      <b-button @click="signOut" class="signout">Sign Out</b-button>
     </div>
 
     <div id="nav-fixed">
@@ -31,22 +33,45 @@
           <router-link to="/world">World</router-link> |
         </span>
       </div>
-      <b-button class="signin">
-        <router-link to="/signin">ログイン</router-link>
-      </b-button>
-      <b-button class="signup">
-        <router-link to="/signup">新規登録</router-link>
-      </b-button>
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
-export default {
-  components: {},
+import firebase from "firebase";
 
-  methods: {}
+export default {
+  component: {},
+  data() {
+    return { toggle: true };
+  },
+  created:
+    // const user = firebase.auth().currentUser;
+    // if (user != null) {
+    function() {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user != null) {
+          console.log("signinしてるよ");
+          this.toggle = false;
+        }
+      });
+    },
+  methods: {
+    signOut: function() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.push("/");
+        });
+      console.log("signoutしたよ");
+      this.toggle = true;
+    },
+    signIn: function() {
+      this.$router.push({ path: "/signin" });
+    }
+  }
 };
 </script>
 
@@ -80,6 +105,23 @@ export default {
   color: rgba(110, 58, 5, 0.986);
 }
 
+#button-fixed {
+  position: fixed;
+  left: 1000px;
+  top: 20px;
+  z-index: 5;
+}
+button {
+  width: 100px;
+  left: 800px;
+  top: 20px;
+  margin: 3px;
+  border: solid 2px rgba(76, 206, 167, 0.4);
+  border-radius: 10px;
+  padding: 0 10px;
+  z-index: 10;
+}
+
 #nav-fixed {
   position: fixed;
   width: 100%; /* 横幅100%*/
@@ -103,15 +145,6 @@ a {
   padding-right: 10px;
   /* ナビゲーションバーのフォントサイズ */
   font-size: 28px;
-}
-button {
-  border-radius: 16px;
-  padding-right: 10px;
-}
-.signin,
-.signup {
-  font-size: 20px;
-  padding: 0 20px;
 }
 .nav-life a.router-link-exact-active {
   color: rgb(245, 209, 9);

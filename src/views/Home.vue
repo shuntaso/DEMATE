@@ -72,12 +72,12 @@ button {
   outline: 0;
 }
 button:active {
-  font-size: 116px;
+  font-size: 120px;
 }
 .life {
   position: absolute;
   margin-left: 200px;
-  margin-top: 180px;
+  margin-top: 190px;
   border-radius: 30px;
   padding: 20px 20px;
   font-size: 128px;
@@ -88,7 +88,7 @@ button:active {
 .food {
   position: absolute;
   margin-left: 480px;
-  margin-top: 180px;
+  margin-top: 190px;
   border-radius: 30px;
   padding: 20px 40px;
   font-size: 128px;
@@ -99,7 +99,7 @@ button:active {
 .animal {
   position: absolute;
   margin-left: 760px;
-  margin-top: 180px;
+  margin-top: 190px;
   border-radius: 30px;
   padding: 20px 30px;
   font-size: 128px;
@@ -111,7 +111,7 @@ button:active {
   position: absolute;
   font-size: 128px;
   margin-left: 1040px;
-  margin-top: 180px;
+  margin-top: 190px;
   border-radius: 30px;
   padding: 20px 44px;
 }
@@ -121,7 +121,7 @@ button:active {
 .sports {
   position: absolute;
   margin-left: 200px;
-  margin-top: 480px;
+  margin-top: 490px;
   border-radius: 30px;
   padding: 20px 30px;
   font-size: 128px;
@@ -132,7 +132,7 @@ button:active {
 .book {
   position: absolute;
   margin-left: 480px;
-  margin-top: 480px;
+  margin-top: 490px;
   border-radius: 30px;
   padding: 20px 20px;
   font-size: 128px;
@@ -143,7 +143,7 @@ button:active {
 .fashion {
   position: absolute;
   margin-left: 760px;
-  margin-top: 480px;
+  margin-top: 490px;
   border-radius: 30px;
   padding: 20px 16px;
   font-size: 128px;
@@ -154,7 +154,7 @@ button:active {
 .world {
   position: absolute;
   margin-left: 1040px;
-  margin-top: 480px;
+  margin-top: 490px;
   border-radius: 30px;
   padding: 20px 35px;
   font-size: 128px;
